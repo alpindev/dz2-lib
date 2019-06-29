@@ -1,0 +1,18 @@
+{
+    "name": "and/dz2",
+    "description": "DZ-2. Library for packagist",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey",
+            "email": "forweban@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "src\\": ""
+        }
+    }
+}
