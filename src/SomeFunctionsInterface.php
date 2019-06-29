@@ -2,7 +2,6 @@
 
 namespace SomeFunctions;
 
-
 Interface SomeFunctionsInterface
 {
 
@@ -28,5 +27,4 @@ Interface SomeFunctionsInterface
      * @return mixed
      */
     public static function hashArgon($password);
-
 }

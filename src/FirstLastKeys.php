@@ -23,23 +23,22 @@ class FirstLastKeys
      * @param $array
      * Возвращает пару переменных - первый и последний ключ массива с целью приема их
      * с помощью list()
-     * Встроена проверка на количество элементов массива:
-     * - 2 и больше - работает
-     * - 1 или пусто - выдает ошибку     *
+     * Встроена проверка на:
+     * - количество элементов массива (2 и больше - работает, 1 или пусто - ошибка
+     * - входной параметр массив/не массив
      */
-    private function setFirstLastKeys($array)
+    private function setFirstLastKeys($array): void
     {
         if(!$this->isCount($array) ) {
-            return false;
+            echo 'Needed array!';
         }
         if(!$this->isMoreOne($array) ) {
-            return false;
+            echo 'Needed 2 or above items in array`s!';
         }
 
         $this->setFirst($array);
         $this->setLast($array);
 
-        return true;
     }
 
     /**
@@ -77,11 +76,6 @@ class FirstLastKeys
     private function setLast($arr)
     {
         $this->last = array_key_last($arr);
-    }
-
-    public function test()
-    {
-        echo 'test';
     }
 
     /**
