@@ -5,13 +5,13 @@ namespace src;
 class Help
 {
     /**
-     * @param $n
+     * @param $n ($n = null)
      * Print teg <br> * n
      */
-    public static function br($n)
+    public static function br($n = null)
     {
-        for ($i = 0; $i < $n; $i++) {
-            echo "<pre>".PHP_EOL.PHP_EOL."</pre>";
+        for ($i = 0; $i <= $n; $i++) {
+            echo "<pre>".PHP_EOL."</pre>";
         };
     }
 
@@ -27,9 +27,10 @@ class Help
      * @param $array
      * Print_r ($array);
      */
-    public static function see($array)
+    public static function see(array $array)
     {
         echo '<pre>';
+        /** @var array $array */
         print_r($array);
         echo '</pre>';
     }
