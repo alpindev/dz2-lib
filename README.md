@@ -109,7 +109,7 @@ $radius = 2.5;
 $square = Math::getSquareCircle($radius);
 ```
 
-###index.php
+### index.php
 ```php
 declare(strict_types=1);
 
