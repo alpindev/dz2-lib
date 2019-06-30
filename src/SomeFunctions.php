@@ -1,6 +1,6 @@
 <?php
 
-namespace SomeFunctions;
+namespace src;
 
 class SomeFunctions implements SomeFunctionsInterface
 {

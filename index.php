@@ -4,15 +4,17 @@ declare(strict_types=1);
 require __DIR__.'/vendor/autoload.php';
 
 use src\Help;
+use src\FirstLastKeys;
+use src\SomeFunctions;
 
 $array = [
-    'a' => 'A',
-    'b' => 'B',
-    'c' => 'C',
-    'd' => 'D',
+    'a' => 'AAA',
+    'b' => 'BBB',
+    'c' => 'CCC',
+    'd' => 'DDD',
 ];
 
-$firstLast = new src\FirstLastKeys($array);
+$firstLast = new FirstLastKeys($array);
 
 list($first, $last) = $firstLast->getFirstLastKeys();
 
@@ -22,5 +24,21 @@ echo 'Last key of array is \'' . $last . '\'';
 Help::br(1);
 Help::see($array);
 Help::hr();
+
+$password = 'qwerty';
+$hashArgon = SomeFunctions::hashArgon($password);
+echo $hashArgon;
+
+Help::br(1);
+Help::hr();
+
+// For example:
+$_GET['user'] = 'Vasyz';
+$name = SomeFunctions::getGetUser($_GET['user']);
+echo $name;
+
+Help::br(1);
+Help::hr();
+
 
 
