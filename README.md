@@ -59,7 +59,7 @@ $_GET['user'] = 'Vasyz';
 $name = SomeFunctions::getGetUser($_GET['user']);
 ```
 
-### Класс SomeFunctions:
+### Класс Help:
 
 6. Реализована возможность разрешать null в типизированных и возвращаемых параметрах
 
