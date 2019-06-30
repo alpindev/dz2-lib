@@ -105,6 +105,7 @@ class Math
 
 #### Применение:
 ```php
-
+$radius = 2.5;
+$square = Math::getSquareCircle($radius);
 ```
 
