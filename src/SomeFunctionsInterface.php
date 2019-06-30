@@ -9,11 +9,11 @@ Interface SomeFunctionsInterface
      * @return $userName - имя пользователя из GET['user'], если он задан и не равен NULL,
      * в противном возвращает 'nobody'
      */
-    public static function getGetUser($getUser);
+    public static function getGetUser(string $getUser);
 
     /**
      * @param $password
      * @return mixed
      */
-    public static function hashArgon($password);
+    public static function hashArgon(string $password);
 }

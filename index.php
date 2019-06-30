@@ -6,6 +6,7 @@ require __DIR__.'/vendor/autoload.php';
 use src\Help;
 use src\FirstLastKeys;
 use src\SomeFunctions;
+use src\Math;
 
 $array = [
     'a' => 'AAA',
@@ -39,6 +40,5 @@ echo $name;
 
 Help::br();
 Help::hr();
-
 
 

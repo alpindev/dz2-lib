@@ -78,8 +78,33 @@ Help::br();
 Help::br(3);
 ```
 
+### Класс Math
 
-7. uuuuuuuuuuuuu
+7. Добавлена поддержка определения области видимости для констант класса
+8. Разрешен null в типизированных и возвращаемых параметрах
 
+```php
+class Math
+{
+    ...
+    
+    private const PI = '3.1415926535';
 
+    /**
+     * @param float $rad
+     * @return float|null
+     */
+    public static function getSquareCircle(float $rad): ?float
+    {
+        return self::PI * $rad ^ 2;
+    }
+    
+    ...
+}
+```
+
+#### Применение:
+```php
+
+```
 
