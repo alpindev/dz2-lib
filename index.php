@@ -3,10 +3,10 @@ declare(strict_types=1);
 
 require __DIR__.'/vendor/autoload.php';
 
-use src\Help;
-use src\FirstLastKeys;
-use src\SomeFunctions;
-use src\Math;
+use forweban\dz2library\src\Help;
+use forweban\dz2library\src\FirstLastKeys;
+use forweban\dz2library\src\SomeFunctions;
+use forweban\dz2library\src\Math;
 
 $array = [
     'a' => 'AAA',

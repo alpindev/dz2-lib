@@ -1,6 +1,6 @@
 <?php
 
-namespace src;
+namespace forweban\dz2library\src;
 
 Interface SomeFunctionsInterface
 {

@@ -1,7 +1,7 @@
 <?php
 // src: src/FirstLastKeys.php
 
-namespace src;
+namespace forweban\dz2library\src;
 
 class FirstLastKeys
 {
