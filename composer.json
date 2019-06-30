@@ -12,7 +12,9 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "forweban\\": ""
+            "src": "",
+            // "forweban\\": "",
+            // "forweban\\dz2-lib\\": ""
         }
     }
 }
