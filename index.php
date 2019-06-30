@@ -44,3 +44,4 @@ Help::hr();
 $radius = 2.5;
 $square = Math::getSquareCircle($radius);
 echo $square;
+
