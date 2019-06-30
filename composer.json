@@ -1,5 +1,5 @@
 {
-    "name": "and/dz2",
+    "name": "forweban/dz2-lib",
     "description": "DZ-2. Library for packagist",
     "type": "library",
     "license": "MIT",
@@ -12,9 +12,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "src": "",
-            // "forweban\\": "",
-            // "forweban\\dz2-lib\\": ""
+            "src\\": ""
         }
     }
 }

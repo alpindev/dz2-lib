@@ -59,7 +59,7 @@ $_GET['user'] = 'Vasyz';
 $name = SomeFunctions::getGetUser($_GET['user']);
 ```
 
-### Класс SomeFunctions:
+### Класс Help:
 
 6. Реализована возможность разрешать null в типизированных и возвращаемых параметрах
 
@@ -78,8 +78,83 @@ Help::br();
 Help::br(3);
 ```
 
+### Класс Math
 
-7. uuuuuuuuuuuuu
+7. Добавлена поддержка определения области видимости для констант класса
+8. Разрешен null в типизированных и возвращаемых параметрах
 
+```php
+class Math
+{
+    ...
+    
+    private const PI = '3.1415926535';
 
+    /**
+     * @param float $rad
+     * @return float|null
+     */
+    public static function getSquareCircle(float $rad): ?float
+    {
+        return self::PI * $rad ^ 2;
+    }
+    
+    ...
+}
+```
+
+#### Применение:
+```php
+$radius = 2.5;
+$square = Math::getSquareCircle($radius);
+```
+
+### index.php
+```php
+declare(strict_types=1);
+
+require __DIR__ . '/vendor/autoload.php';
+
+use src\Help;
+use src\SomeFunctions;
+use src\Math;
+use dz2_lib\FirstLastKeys;
+
+$array = [
+    'a' => 'AAA',
+    'b' => 'BBB',
+    'c' => 'CCC',
+    'd' => 'DDD',
+];
+
+$firstLast = new dz2_lib\FirstLastKeys($array);
+
+list($first, $last) = $firstLast->getFirstLastKeys();
+
+echo 'First key of array is \'' . $first . '\'';
+Help::br(1);
+echo 'Last key of array is \'' . $last . '\'';
+Help::br();
+Help::see($array);
+Help::hr();
+
+$password = 'qwerty';
+$hashArgon = SomeFunctions::hashArgon($password);
+echo $hashArgon;
+
+Help::br();
+Help::hr();
+
+$_GET['user'] = 'Vasya';
+$name = SomeFunctions::getGetUser($_GET['user']);
+echo $name;
+
+Help::br();
+Help::hr();
+
+$radius = 2.5;
+$square = Math::getSquareCircle($radius);
+echo $square;
+
+```
 

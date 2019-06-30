@@ -12,7 +12,7 @@ class SomeFunctions implements SomeFunctionsInterface
      * @return $userName - имя пользователя из GET['user'], если он задан и не равен NULL,
      * в противном возвращает 'nobody'
      */
-    public static function getGetUser($getUser)
+    public static function getGetUser(string $getUser)
     {
         return $userName = $getUser ?? 'nobody';
     }
@@ -21,7 +21,7 @@ class SomeFunctions implements SomeFunctionsInterface
      * @param $password
      * @return bool|mixed|string
      */
-    public static function hashArgon($password)
+    public static function hashArgon(string $password)
     {
         return password_hash($password, PASSWORD_ARGON2I);
     }
