@@ -12,9 +12,7 @@
 
 #### Пример:
 ```<?php
-require __DIR__.'/vendor/autoload.php';
-
-use src\FirstLastKeys;
+...
 
 $array = [
     'a' => 'AAA',
@@ -115,10 +113,10 @@ declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
-use src\Help;
-use src\SomeFunctions;
-use src\Math;
-use dz2_lib\FirstLastKeys;
+use forweban\dz2library\src\Help;
+use forweban\dz2library\src\FirstLastKeys;
+use forweban\dz2library\src\SomeFunctions;
+use forweban\dz2library\src\Math;
 
 $array = [
     'a' => 'AAA',
@@ -127,7 +125,7 @@ $array = [
     'd' => 'DDD',
 ];
 
-$firstLast = new dz2_lib\FirstLastKeys($array);
+$firstLast = new FirstLastKeys($array);
 
 list($first, $last) = $firstLast->getFirstLastKeys();
 
